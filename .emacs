@@ -1,3 +1,13 @@
+(add-to-list 'load-path "~/.emacs.d/options/")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/options/themes")
+
+(require 'web-mode)
+(require 'php-mode)
+(add-to-list 'auto-mode-alist '("\\html?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.css?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
+ (add-to-list 'auto-mode-alist '("\\.php?\\'" . web-mode))
+
 (setq package-check-signature nil)
 (setq create-lockfiles nil)
 (menu-bar-mode -1)
