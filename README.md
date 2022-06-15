@@ -11,3 +11,9 @@ rm README.md
 ```
 
 note: the `mv` command will give "no such file or directory" output which can be safely ignored
+
+on zsh, that weird mv command should be this instead: 
+
+```
+mv ~/emacs-config/*(DN) ~/
+```
